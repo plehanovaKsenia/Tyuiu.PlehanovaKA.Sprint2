@@ -1,0 +1,19 @@
+﻿using tyuiu.cources.programming.interfaces.Sprint2;
+namespace Tyuiu.PlehanovaKA.Sprint2.Task1.V13.Lib
+{
+    public class DataService : ISprint2Task1V13
+    {
+        public bool[] GetLogicOperations(int a, int b, int c, int d)
+        {
+            bool[] res = new bool[6];
+            res[0] = (a==d)|(b>c);
+            res[1] = (a<c)&(b>=d);
+            res[2] = (a<=b)||(c==d);
+            res[3] = (a==c-19)&&(b>=d);
+            res[4] = (a==b)==!(c>=d);
+            res[5] = (a<d)^(b==c);
+            return res;
+
+        }
+    }
+}
