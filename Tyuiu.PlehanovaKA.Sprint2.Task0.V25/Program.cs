@@ -7,7 +7,7 @@ namespace Tyuiu.PlehanovaKA.Sprint2.Task0.V25
         {
             DataService ds = new DataService();
             int x = 205, y = 159;
-            bool[] res = new bool[6];
+            bool[] res = new bool [6];
             res = ds.GetCompareOperations(x, y);
 
             Console.Title = "Спринт #2 | Выполнила: Плеханова К. А. | СМАРТб-26-1";
