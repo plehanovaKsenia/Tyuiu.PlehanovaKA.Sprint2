@@ -38,6 +38,8 @@ namespace Tyuiu.PlehanovaKA.Sprint2.Task5.V12.Lib
             string ygs = Convert.ToString(yg);
             string yms = Convert.ToString(ym);
             string yns = Convert.ToString(yn);
+            yms = yms.Length == 2 ? yms : '0' + yms;
+            yns = yns.Length == 2 ? yns : '0' + yns;
             return (yns+'.'+yms+'.'+ygs);
         }
     }
